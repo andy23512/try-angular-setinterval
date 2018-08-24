@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./a.component.css']
 })
 export class AComponent implements OnInit {
-  constructor() { }
+  date = new Date();
+  constructor() {}
 
   ngOnInit() {
+    setInterval(() => {
+      this.date = new Date();
+    }, 1000);
   }
-
 }

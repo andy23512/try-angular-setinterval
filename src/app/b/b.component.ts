@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./b.component.css']
 })
 export class BComponent implements OnInit {
+  nameList: string[] = ['nanoha', 'fate', 'hayate'];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
